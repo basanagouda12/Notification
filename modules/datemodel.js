@@ -80,7 +80,7 @@ module.exports.getdata=async function() {
 			}
 			})
 		console.log(result.rowCount);
-		console.log('result here...............................');
+	
 
         console.log(expdate);
 		return expdate.rows;
