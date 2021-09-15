@@ -56,16 +56,16 @@ module.exports.getdata=async function() {
 				var transporter = nodemailer.createTransport({
 					service: 'gmail',
 					auth: {
-					user: 'basanagoudap9141@gmail.com',
-					pass: '9663492130'
+					user: '************@gmail.com',
+					pass: '*****'
 					}
 				});
 
 				var mailOptions = {
 					from: 'basanagoudap9141@gmail.com',
 					to: result.rows[i].email,
-					subject: 'sending email',
-					text: `hi`
+					subject: 'Remainder❗❗❗',
+					html: `<h4>This is to inform u that only 2 days remaining for your task completion, Do it as soon as possible</h4>`
 				};
 				console.log('Email sent To: ' + result.rows[i].email);
 				transporter.sendMail(mailOptions, function(error, info){
